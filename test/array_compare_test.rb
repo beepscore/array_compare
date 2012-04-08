@@ -1,9 +1,9 @@
 #!/usr/bin/env ruby
 
 require 'test/unit'
-require_relative '../lib/array_sort'
+require_relative '../lib/array_compare'
 
-class ArraySortTest < MiniTest::Unit::TestCase
+class ArrayCompareTest < MiniTest::Unit::TestCase
 
 
 end

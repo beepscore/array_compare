@@ -2,7 +2,7 @@
 
 require 'rake'
 require 'rake/testtask'
-require_relative 'test/array_sort_test'
+require_relative 'test/array_compare_test'
 
 # http://rake.rubyforge.org/
 # http://stackoverflow.com/questions/6715158/rails-how-to-set-up-minitest
