@@ -3,18 +3,20 @@
 require 'pp'
 
 # HashWithCount converts an array into a hash.
-# Each key is an object in the array.
-# The value is the count of the number of times the key appeared in the array.
+# Each key in the hash corresponds to one element (or more than one equal elements) in the array.
+# For each key, the value is the number of times the element appears in the array.
+# Note: If two arrays have the same elements in different order, their HashWithCounts are equal.
 class HashWithCount < Hash
 
   def initialize(an_array = [])
 
     an_array.each do  |element|
+
       if self.has_key?(element)
-        # increment count
+        # the hash has a key for this element, increment the key's count value
         self[element] += 1
       else
-        # key to hash with count of 1
+        # the hash doesn't have a key for this element, add it with count of 1
         self[element] = 1
       end
     end
