@@ -44,4 +44,5 @@ class HashWithCountTest < MiniTest::Unit::TestCase
     pp actual_result
     assert_equal(expected_result, actual_result, 'hash with count empty should be empty')
   end
+
 end
