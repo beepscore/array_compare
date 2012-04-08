@@ -24,6 +24,11 @@ class ArrayCompareTest < MiniTest::Unit::TestCase
     assert(a.is_equivalent?(b))
   end
 
+  def test_multiple_types()
+    a = [1, :a, :a, {}]
+    b = [{}, :a, 1, :a]
+    assert(a.is_equivalent?(b))
+  end
 
   def test_array_compare_false()
     a = []

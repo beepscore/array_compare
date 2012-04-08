@@ -7,6 +7,7 @@ class Array
 
   # is_equivalent? returns true if the argument array has the same elements as self, independent of order.
   # Note either or both arrays may contain duplicate elements.
+  # Within an array, elements may be of different types, and do not have to be comparable/sortable.
   def is_equivalent?(an_array)
     is_equivalent = false
     if ( (self.length == an_array.length) &&
