@@ -19,6 +19,7 @@ class HashWithCount < Hash
         # the hash doesn't have a key for this element, add it with count of 1
         self[element] = 1
       end
+
     end
   end
 
